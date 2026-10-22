@@ -54,6 +54,67 @@ def main():
     one_item = ("hello",)
     print(one_item)
     # What do you notice about the syntax? it included the comma but why? bc its a tuple
+    colors = ("red", "blue", "red", "green", "red")
+    print(colors.count("red"))
+# How many "red" entries are there? - 3
+    print(colors.index("green"))
+# What position is "green" in the tuple? - 3
+
+
+    my_set = {"apple", "banana", "cherry"}
+    print(my_set)
+# Does the order match what you typed? Why or why not? no, bc im not actually sure
+    my_set.add("orange")
+    print(my_set)
+# What changed? - added orange to the front
+    my_set.add("banana")
+    print(my_set)
+# Did anything change? Why or why not? no bc its a dupe so its overidden and kept the same
+    my_set.remove("apple")
+    print(my_set)
+# Which item is gone? the apple
+    my_set.discard("pear")
+# What happened? Was there an error? - apple went to the front and now in alphabetical order but rfemoved it and now others changed pos
+    tropical = {"banana", "mango", "papaya"}
+    all_fruits = my_set.union(tropical)
+    print(all_fruits)
+# What items are in the result? Any duplicates?no dupes, added mango and papaya
+
+    my_dict = {"name": "Sam", "age": 16, "grade": "11th"}
+    print(my_dict)
+# What keys and values are present? name age and grade and values are sam 16 11th
+    print(my_dict["age"])
+    # What value did this return? - 16 which is the value of the key age
+    # print(my_dict["school"])
+# What error do you get? key error bc theres no key - made it a comment so i can print latyer
+    my_dict["grade"] = "12th"
+    print(my_dict)
+# Did the value update? yes
+    my_dict["school"] = "Central High"
+    print(my_dict)
+# What’s the new key and value? - school and value of central high
+    del my_dict["age"]
+    print(my_dict)
+# Which key is missing now? removed age key and value
+    print(my_dict.get("locker"))
+# What value was returned? Was there an error? no value
+    for key, value in my_dict.items():
+    print(key, "->", value)
+# What got printed? How does this help you read the dictionary? - got errorS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
